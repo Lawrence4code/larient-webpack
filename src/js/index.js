@@ -1,5 +1,6 @@
-particlesJS.load('particles-js', './assets/particles.json');
+// import particlesJS from './particles.min';
 import '../scss/styles.scss';
+// particlesJS.load('particles-js', './assets/particles.json');
 
 // ------------------------ Main menu toggle and visiblity ------------------------ //
 const wrapperMenu = document.querySelector('.wrapper-menu');
