@@ -5,7 +5,7 @@ import '../scss/styles.scss';
 // ------------------------ Main menu toggle and visiblity ------------------------ //
 const wrapperMenu = document.querySelector('.wrapper-menu');
 
-wrapperMenu.addEventListener('click', function() {
+wrapperMenu.addEventListener('click', function () {
   wrapperMenu.classList.toggle('open');
   document
     .querySelector('.menu__background')
@@ -117,6 +117,8 @@ const filterSelection = text => {
   }
 };
 
+
+
 const btnContainer = document.getElementById('projects__button');
 const btns = document.getElementsByClassName('btn');
 for (let btn of btns) {
@@ -205,16 +207,16 @@ document
       'none';
   });
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (
     event.target ===
-      document.querySelector('.foundation__codeModal--container') ||
+    document.querySelector('.foundation__codeModal--container') ||
     event.target ===
-      document.querySelector('.foundation__optimizationModal--container') ||
+    document.querySelector('.foundation__optimizationModal--container') ||
     event.target ===
-      document.querySelector('.foundation__designModal--container') ||
+    document.querySelector('.foundation__designModal--container') ||
     event.target ===
-      document.querySelector('.foundation__experienceModal--container')
+    document.querySelector('.foundation__experienceModal--container')
   ) {
     document.querySelector('.foundation__codeModal--container').style.display =
       'none';
@@ -233,7 +235,7 @@ window.onclick = function(event) {
     event.target === document.querySelector('.projectOne__modal--container') ||
     event.target === document.querySelector('.projectTwo__modal--container') ||
     event.target ===
-      document.querySelector('.projectThree__modal--container') ||
+    document.querySelector('.projectThree__modal--container') ||
     event.target === document.querySelector('.projectFour__modal--container') ||
     event.target === document.querySelector('.projectFive__modal--container') ||
     event.target === document.querySelector('.projectSix__modal--container')
@@ -290,6 +292,8 @@ function doSomething(scrollPosition) {
   }
 
   if (scrollPosition > 740) {
+    import('./hello');
+
     document
       .getElementsByClassName('process__bar')[0]
       .classList.add('moveInFromLeftAni');

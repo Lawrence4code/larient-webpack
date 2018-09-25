@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{3:function(n,e,o){"use strict";o.r(e);var t=function(){console.log("hello")},c=document.createElement("button");c.innerText="click";var l=document.getElementById("foundation");console.log(l),l.appendChild(c),t(),e.default=t}}]);
