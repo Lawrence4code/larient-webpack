@@ -76,30 +76,37 @@ html {
   box-sizing: border-box;
 
   @include respond(phone) {
-    font-size: 68.75%; // 1rem = 11px  // 11px/16px  = 68.75%
+    font-size: 105%; // 1rem = 11px  // 11px/16px  = 68.75%
+    background-color: yellow;
   }
 
   @include respond(tab-port) {
-    font-size: 75%; // 1rem = 12px  // 12px/16px  = 75.00%
+    font-size: 110%; // 1rem = 12px  // 12px/16px  = 75.00%
+    background-color: green;
   }
 
   @include respond(tab-land) {
-    font-size: 81.25%; // 1rem = 13px  // 13px/16px  = 81.25%
+    font-size: 115%; // 1rem = 13px  // 13px/16px  = 81.25%
+    background-color: blue;
   }
 
   @include respond(netbook) {
-    font-size: 87.75%; // 1rem = 14px  // 14px/16px  = 87.75%
+    font-size: 120%; // 1rem = 14px  // 14px/16px  = 87.75%
+    background-color: orangered;
   }
 
   @include respond(desktop) {
-    font-size: 93.75%; // 1rem = 15px  // 15px/16px  = 93.75%
+    font-size: 125%; // 1rem = 15px  // 15px/16px  = 93.75%
+    background-color: red;
   }
 
   @include respond(wide-screen) {
-    font-size: 100%; // 1rem = 16px  // 16px/16px  = 100%
+    font-size: 130%; // 1rem = 16px  // 16px/16px  = 100%
+    background-color: magenta
   }
 
-  font-size: 62.5%; // 1rem = 10px // 10px/16px = 62.5%
+  font-size: 100%; // 1rem = 10px // 10px/16px = 62.5%
+  background-color: pink;
 }
 
 html,

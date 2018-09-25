@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build:prod": "webpack -p",
+    "dev-server": "webpack-dev-server"
   },
   "repository": "https://github.com/Lawrence4code/mockup-to-article.git",
   "author": "Lawrence <Lawrence4code@gmail.com>",
@@ -11,18 +13,24 @@
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.2",
+    "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
+    "html-minifier": "^3.5.20",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.3.1",
     "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.1",
     "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   }
 }

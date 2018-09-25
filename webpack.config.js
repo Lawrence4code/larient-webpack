@@ -1,10 +1,11 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const config = {
   entry: './src/js/index.js',
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -18,13 +19,27 @@ const config = {
           {
             loader: MiniCssExtractPlugin.loader
           },
-          'css-loader',
-          'sass-loader'
+          {
+            loader: 'css-loader',
+            options: { minimize: true }
+          },
+          'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [require('autoprefixer')]
+            }
+          }
         ]
       },
       {
         test: /\.html$/,
-        use: ['html-loader']
+        use: [
+          {
+            loader: 'html-loader',
+            options: { minimize: true }
+          }
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
@@ -55,12 +70,13 @@ const config = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html'
-    })
+    }),
+    new CompressionPlugin()
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
-    // publicPath: 'build/'
+    filename: 'bundle.js',
+    // publicPath: '/'
   }
 };
 
