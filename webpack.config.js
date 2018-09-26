@@ -1,7 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
+// const CompressionPlugin = require('compression-webpack-plugin');
 
 const config = {
   entry: './src/js/index.js',
@@ -71,7 +71,7 @@ const config = {
       template: 'src/index.html',
       filename: 'index.html'
     }),
-    new CompressionPlugin()
+    // new CompressionPlugin()
   ],
   output: {
     path: path.resolve(__dirname, 'build'),

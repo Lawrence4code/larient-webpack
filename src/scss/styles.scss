@@ -737,6 +737,8 @@ $shadows-big: multiple-box-shadow(100);
 
 /* ------------------------------------ Projects Section ------------------------------------*/
 
+/*
+
 .projects {
   background-color: $off-white;
   position: relative;
@@ -945,6 +947,7 @@ $shadows-big: multiple-box-shadow(100);
 
 /* ------------------------- Modal Style ------------------------- */
 
+/*
 .projectOne__modal--container,
 .projectTwo__modal--container,
 .projectThree__modal--container,
@@ -1025,32 +1028,32 @@ $shadows-big: multiple-box-shadow(100);
   }
 }
 
-/* project modal one */
+// project modal one 
 .projectOne__modal--image {
   background-image: url('../images/webappport1.jpg');
 }
 
-/* project modal two */
+// project modal two
 .projectTwo__modal--image {
   background-image: url('../images/webappport2.jpg');
 }
 
-/* project modal Three */
+// project modal Three
 .projectThree__modal--image {
   background-image: url('../images/webappport3.jpg');
 }
 
-/* project modal four */
+// project modal four
 .projectFour__modal--image {
   background-image: url('../images/webappport4.jpg');
 }
 
-/* project modal five */
+// project modal five
 .projectFive__modal--image {
   background-image: url('../images/webappport5.jpg');
 }
 
-/* project modal six */
+// project modal six
 .projectSix__modal--image {
   background-image: url('../images/webappport6.jpg');
 }
@@ -1131,6 +1134,8 @@ $shadows-big: multiple-box-shadow(100);
   padding-bottom: 0.2rem;
   width: 1.6rem;
 }
+
+*/
 
 .footer {
   align-items: center;
@@ -1266,6 +1271,7 @@ $shadows-big: multiple-box-shadow(100);
   }
 }
 
+/*
 .threeColumns {
   column-gap: 1rem;
   display: grid;
@@ -1297,6 +1303,8 @@ $shadows-big: multiple-box-shadow(100);
     width: 60%;
   }
 }
+
+*/
 
 // pushed classes element animation/visibility
 
