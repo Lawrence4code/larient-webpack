@@ -19,6 +19,15 @@
 
   }
 
+    @if $breakpoint==phone-big {
+    @media (min-width: 25em) {
+      @content;
+    }
+
+    // 320px/16px   = 20em
+
+  }
+
   @if $breakpoint==tab-port {
     @media (min-width: 30em) {
       @content;
@@ -78,6 +87,11 @@ html {
   @include respond(phone) {
     font-size: 105%; // 1rem = 11px  // 11px/16px  = 68.75%
     background-color: yellow;
+  }
+
+    @include respond(phone-big) {
+    font-size: 105%; // 1rem = 11px  // 11px/16px  = 68.75%
+    background-color: brown;
   }
 
   @include respond(tab-port) {
