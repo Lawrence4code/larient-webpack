@@ -82,7 +82,7 @@ document
     ).style.display = 'none';
   });
 
-
+console.log('testing.')
 
 window.onclick = function (event) {
   if (
@@ -93,7 +93,15 @@ window.onclick = function (event) {
     event.target ===
     document.querySelector('.foundation__designModal--container') ||
     event.target ===
-    document.querySelector('.foundation__experienceModal--container')
+    document.querySelector('.foundation__experienceModal--container') ||
+    event.target === document.querySelector('.projectOne__modal--container') ||
+    event.target === document.querySelector('.projectTwo__modal--container') ||
+    event.target ===
+    document.querySelector('.projectThree__modal--container') ||
+    event.target === document.querySelector('.projectFour__modal--container') ||
+    event.target === document.querySelector('.projectFive__modal--container') ||
+    event.target === document.querySelector('.projectSix__modal--container') ||
+    event.target === document.querySelector('.foundation__extraProjects--container')
   ) {
     document.querySelector('.foundation__codeModal--container').style.display =
       'none';
@@ -106,17 +114,6 @@ window.onclick = function (event) {
     document.querySelector(
       '.foundation__experienceModal--container'
     ).style.display = 'none';
-  }
-  // this can be moved ???
-  if (
-    event.target === document.querySelector('.projectOne__modal--container') ||
-    event.target === document.querySelector('.projectTwo__modal--container') ||
-    event.target ===
-    document.querySelector('.projectThree__modal--container') ||
-    event.target === document.querySelector('.projectFour__modal--container') ||
-    event.target === document.querySelector('.projectFive__modal--container') ||
-    event.target === document.querySelector('.projectSix__modal--container')
-  ) {
     document.querySelector('.projectOne__modal--container').style.display =
       'none';
     document.querySelector('.projectTwo__modal--container').style.display =
@@ -128,6 +125,8 @@ window.onclick = function (event) {
     document.querySelector('.projectFive__modal--container').style.display =
       'none';
     document.querySelector('.projectSix__modal--container').style.display =
+      'none';
+    document.querySelector('.foundation__extraProjects--container').style.display =
       'none';
   }
 };

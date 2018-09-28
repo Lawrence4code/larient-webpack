@@ -103,6 +103,14 @@ document
       'block';
   });
 
+document
+  .querySelector('.foundation__extraProjects--btn')
+  .addEventListener('click', () => {
+    console.log('foundation__extraProjects--btn clicked.')
+    document.querySelector('.foundation__extraProjects--container').style.display =
+      'block';
+  });
+
 // Projects display close //
 
 document
@@ -139,5 +147,13 @@ document
   .querySelector('.projectSix__modal--closeBtn')
   .addEventListener('click', () => {
     document.querySelector('.projectSix__modal--container').style.display =
+      'none';
+  });
+
+document
+  .querySelector('.foundation__extraProjects--closeBtn')
+  .addEventListener('click', () => {
+
+    document.querySelector('.foundation__extraProjects--container').style.display =
       'none';
   });
