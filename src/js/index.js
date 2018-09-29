@@ -82,8 +82,6 @@ document
     ).style.display = 'none';
   });
 
-console.log('testing.')
-
 window.onclick = function (event) {
   if (
     event.target ===

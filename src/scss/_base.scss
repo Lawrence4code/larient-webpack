@@ -86,41 +86,40 @@ html {
 
   @include respond(phone) {
     font-size: 102.5%; // 1rem = 11px  // 11px/16px  = 68.75%
-    background-color: yellow;
+
   }
 
     @include respond(phone-big) {
     font-size: 105%; // 1rem = 11px  // 11px/16px  = 68.75%
-    background-color: brown;
+
   }
 
   @include respond(tab-port) {
     font-size: 107.5%; // 1rem = 12px  // 12px/16px  = 75.00%
-    background-color: green;
+
   }
 
   @include respond(tab-land) {
     font-size: 110%; // 1rem = 13px  // 13px/16px  = 81.25%
-    background-color: blue;
+
   }
 
   @include respond(netbook) {
     font-size: 112.5%; // 1rem = 14px  // 14px/16px  = 87.75%
-    background-color: orangered;
+
   }
 
   @include respond(desktop) {
     font-size: 115%; // 1rem = 15px  // 15px/16px  = 93.75%
-    background-color: white;
+
   }
 
   @include respond(wide-screen) {
     font-size: 125%; // 1rem = 16px  // 16px/16px  = 100%
-    background-color: magenta
+
   }
 
   font-size: 100%; // 1rem = 10px // 10px/16px = 62.5%
-  background-color: pink;
 }
 
 html,

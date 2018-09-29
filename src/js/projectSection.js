@@ -4,7 +4,6 @@ import '../css/projectSectionStyles.css'
 // Project filter function //
 const filterSelection = text => {
   const projects = document.getElementsByClassName('projects__items');
-  console.log('filterSelection Clicked.');
 
   for (let project of projects) {
     const projectName = project.classList[1];
@@ -106,7 +105,6 @@ document
 document
   .querySelector('.projects__extraProjects--btn')
   .addEventListener('click', () => {
-    console.log('projects__extraProjects--btn clicked.')
     document.querySelector('.projects__extraProjects--container').style.display =
       'block';
   });
