@@ -104,10 +104,10 @@ document
   });
 
 document
-  .querySelector('.foundation__extraProjects--btn')
+  .querySelector('.projects__extraProjects--btn')
   .addEventListener('click', () => {
-    console.log('foundation__extraProjects--btn clicked.')
-    document.querySelector('.foundation__extraProjects--container').style.display =
+    console.log('projects__extraProjects--btn clicked.')
+    document.querySelector('.projects__extraProjects--container').style.display =
       'block';
   });
 
@@ -151,9 +151,28 @@ document
   });
 
 document
-  .querySelector('.foundation__extraProjects--closeBtn')
+  .querySelector('.projects__extraProjects--closeBtn')
   .addEventListener('click', () => {
 
-    document.querySelector('.foundation__extraProjects--container').style.display =
+    document.querySelector('.projects__extraProjects--container').style.display =
+      'none';
+  });
+
+
+// Extra for perf modal
+
+document
+  .querySelector('.siteDetails__modal--btn')
+  .addEventListener('click', () => {
+
+    document.querySelector('.siteDetails__modal--container').style.display =
+      'block';
+  });
+
+document
+  .querySelector('.siteDetails__modal--closeBtn')
+  .addEventListener('click', () => {
+
+    document.querySelector('.siteDetails__modal--container').style.display =
       'none';
   });

@@ -229,6 +229,7 @@ $shadows-big: multiple-box-shadow(100);
   width: 100%;
 }
 
+
 .line-menu.half {
   width: 50%;
 }
@@ -630,7 +631,7 @@ $shadows-big: multiple-box-shadow(100);
       width: 65%;
     }
 
-         @include respond(desktop) {
+    @include respond(desktop) {
       margin-top: 5%;
       width: 50%;
     }
@@ -1362,6 +1363,7 @@ $shadows-big: multiple-box-shadow(100);
 }
 
 */
+
 
 // pushed classes element animation/visibility
 

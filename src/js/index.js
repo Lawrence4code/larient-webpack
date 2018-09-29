@@ -101,7 +101,8 @@ window.onclick = function (event) {
     event.target === document.querySelector('.projectFour__modal--container') ||
     event.target === document.querySelector('.projectFive__modal--container') ||
     event.target === document.querySelector('.projectSix__modal--container') ||
-    event.target === document.querySelector('.foundation__extraProjects--container')
+    event.target === document.querySelector('.projects__extraProjects--container') ||
+    event.target === document.querySelector('.siteDetails__modal--container')
   ) {
     document.querySelector('.foundation__codeModal--container').style.display =
       'none';
@@ -126,7 +127,9 @@ window.onclick = function (event) {
       'none';
     document.querySelector('.projectSix__modal--container').style.display =
       'none';
-    document.querySelector('.foundation__extraProjects--container').style.display =
+    document.querySelector('.projects__extraProjects--container').style.display =
+      'none';
+    document.querySelector('.siteDetails__modal--container').style.display =
       'none';
   }
 };
