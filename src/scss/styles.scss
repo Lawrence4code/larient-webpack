@@ -122,7 +122,7 @@ $shadows-big: multiple-box-shadow(100);
   align-items: center;
   color: white;
   display: flex;
-  height: 6rem;
+  height: 4rem;
   justify-content: space-between;
   position: absolute;
   width: 100%;
@@ -133,7 +133,7 @@ $shadows-big: multiple-box-shadow(100);
 
     &:first-child {
       margin-left: 2rem;
-      color: $pink;
+      color: $grey-light;
     }
 
     &:last-child {
@@ -143,15 +143,17 @@ $shadows-big: multiple-box-shadow(100);
 
   &__logo {
     display: inline-block;
-    fill: currentColor;
-    height: 3rem;
+    fill: white;
     stroke-width: 0;
-    stroke: currentColor;
-    width: 3rem;
+    stroke: white;
+    cursor: pointer;
 
-    &--icon {
-      height: 2.25rem;
-      width: 2.25rem;
+    & h2 {
+      font-weight: 400;
+        &:hover {
+          color: $pink;
+          transition: all .3s ease-in;
+    }
     }
   }
 }
@@ -303,7 +305,7 @@ $shadows-big: multiple-box-shadow(100);
     @include respond(wide-screen) {
       font-size: 3.5rem;
       width: 45rem;
-       line-height: 3.7rem;
+      line-height: 3.7rem;
     }
 
     & span {
@@ -390,19 +392,10 @@ $shadows-big: multiple-box-shadow(100);
 
   &__button {
     position: fixed;
-    top: 2rem;
+    top: 1.5rem;
     right: 2rem;
     z-index: 900;
 
-    @include respond(tab-land) {
-    top: 2.5rem;
-    right: 2.5rem;
-    }
-
-    @include respond(tab-land) {
-      top: 3rem;
-      right: 3rem;
-    }
   }
 
   &__content {
@@ -555,38 +548,34 @@ $shadows-big: multiple-box-shadow(100);
       margin-bottom: 0.5rem;
       line-height: 145%;
       width: 100%;
-
-      @include respond(tab-land) {
-        font-size: 1rem;
-      }
     }
   }
 
   &__icon--code {
-    height: 9rem;
+    height: 7.5rem;
     padding-bottom: 1rem;
-    width: 9rem;
+    width: 7.5rem;
   }
 
   &__icon--optimization {
-    height: 7rem;
+    height: 5.5rem;
     margin-bottom: 2rem;
     padding-top: 1.5rem;
-    width: 7rem;
+    width: 5.5rem;
   }
 
   &__icon--design {
-    height: 7rem;
+    height: 5.5rem;
     margin-bottom: 2rem;
     padding-top: 1.5rem;
-    width: 7rem;
+    width: 5.5rem;
   }
 
   &__icon--experience {
-    height: 8.8rem;
+    height: 7.3rem;
     margin-bottom: 0.2rem;
     padding: 1.25rem 0 1.5rem 0;
-    width: 9rem;
+    width: 7.3rem;
   }
 }
 
@@ -655,7 +644,7 @@ $shadows-big: multiple-box-shadow(100);
         content: ' ';
         border-bottom: 1px dashed $grey;
         display: block;
-        margin: 2rem auto 0 auto;
+        margin: 1.5rem auto 0 auto;
         width: 50%;
       }
     }
@@ -697,13 +686,13 @@ $shadows-big: multiple-box-shadow(100);
 .process {
   background: white;
   display: none;
-  height: 17.5rem;
+  height: 15rem;
   margin: 5rem auto 0 auto;
   width: 80%;
 
   @include respond(tab-land) {
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -711,7 +700,7 @@ $shadows-big: multiple-box-shadow(100);
   color: $grey;
   font-size: 2.6rem;
   font-weight: 400;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   word-spacing: 5px;
 }
 
@@ -723,7 +712,7 @@ $shadows-big: multiple-box-shadow(100);
   width: 100%;
 
   @include respond(tab-land) {
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 }
 
@@ -1214,8 +1203,8 @@ $shadows-big: multiple-box-shadow(100);
     width: 80%;
 
     & a {
-      border-bottom: 1px dotted rgb(104, 137, 238);
-      color: rgb(104, 137, 238);
+      border-bottom: 1px dotted $blue;
+      color: $blue;
       text-decoration: none;
 
       &:active,
@@ -1308,11 +1297,10 @@ $shadows-big: multiple-box-shadow(100);
         fill: #0077b5;
       }
 
-      padding-top: 0.3rem;
-
       & svg {
-        height: 1.8rem;
-        width: 1.8rem;
+        padding-top: 2px;
+        height: 1.3rem;
+        width: 1.3rem;
       }
     }
   }

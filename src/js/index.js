@@ -185,6 +185,7 @@ function doSomething(scrollPosition) {
   if (scrollPosition > 2000) {
     document.getElementsByClassName('heart__SVG')[0].classList.add('beat');
   }
+
 }
 
 window.addEventListener('scroll', () => {
@@ -246,7 +247,7 @@ document
 
 document
   .querySelector('.home__link')
-  .addEventListener('click', doScrolling.bind(null, '#particles-js', 1500));
+  .addEventListener('click', doScrolling.bind(null, '#hero__section', 1500));
 
 document
   .querySelector('.foundation__link')

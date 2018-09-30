@@ -174,3 +174,5 @@ document
     document.querySelector('.siteDetails__modal--container').style.display =
       'none';
   });
+
+document.getElementById('footer__img').setAttribute('src', './images/lawrence.png');
